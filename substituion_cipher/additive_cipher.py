@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Oct 17 21:54:07 2020
-
 @author: darshasawa
 """
 
