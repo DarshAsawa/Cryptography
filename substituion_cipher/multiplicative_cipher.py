@@ -7,7 +7,7 @@
 
 key_domain = [1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
 
-def caesar_cipher_encrypt(text,value):
+def multi_cipher_encrypt(text,value):
     cipher = ''
     for char in text:
         char = char.lower()
@@ -21,7 +21,7 @@ def caesar_cipher_encrypt(text,value):
 text = input("Enter string: ")
 shift_value = int(input("Enter shift value: "))
 if shift_value in key_domain:
-    cipher_encrypted_text = caesar_cipher_encrypt(text,shift_value)
+    cipher_encrypted_text = multi_cipher_encrypt(text,shift_value)
     print(cipher_encrypted_text)
     
 else:
