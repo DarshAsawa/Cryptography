@@ -20,6 +20,9 @@ def caesar_cipher_encrypt(text,value):
 
 text = input("Enter string: ")
 shift_value = int(input("Enter shift value: "))
-
-cipher_encrypted_text = caesar_cipher_encrypt(text,shift_value)
-print(cipher_encrypted_text)
+if shift_value in key_domain:
+    cipher_encrypted_text = caesar_cipher_encrypt(text,shift_value)
+    print(cipher_encrypted_text)
+    
+else:
+    print("\nThe key entered doesn't exists in domain")
