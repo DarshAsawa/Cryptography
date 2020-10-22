@@ -12,3 +12,7 @@ In substitution cipher, one symbol/character replaces with another. For example,
 
 2. **Multiplicative Cipher** : In multiplicative cipher, encryption algorithm specifies multiplication of the plaintext by the key. The key needs to be in Z26*. This set has only 12 members: 1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25.
 
+3. **Affine Cipher** : Combine additive and multiplicative ciphers. Two keys are used in Affine ciphers. The affine cipher uses a pair of keys in which the first key is from Z26* and the second is from Z26. The size of the key domain is 26 × 12 = 312.
+
+
+
