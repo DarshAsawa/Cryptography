@@ -4,7 +4,7 @@ In substitution cipher, one symbol/character replaces with another. For example,
 
 ## Types: 
  - **Monoalphabetic ciphers** : A character in plaintext is always changed to the same character in the ciphertext regardless of the position. It includes additive, multiplicative and affine cipher.
- - **Polyalphabetic ciphers** : In polyalphabetic substitution, each occurrence of a character may have a different substitute. The relationship between a character in the plaintext to a character in the ciphertext is one-to-many. It includes autokey, Playfair, Vigenere, Hill cipher
+ - **Polyalphabetic ciphers** : In polyalphabetic substitution, each occurrence of a character may have a different substitute. The relationship between a character in the plaintext to a character in the ciphertext is one-to-many. It includes autokey, Playfair, Vigenere, Hill cipher.
 
 
 ## Implementation: 
@@ -14,5 +14,5 @@ In substitution cipher, one symbol/character replaces with another. For example,
 
 3. **Affine Cipher** : Combine additive and multiplicative ciphers. Two keys are used in Affine ciphers. The affine cipher uses a pair of keys in which the first key is from Z26* and the second is from Z26. The size of the key domain is 26 × 12 = 312.
 
-
+4. **Autokey Cipher** : Autokey Cipher is a polyalphabetic substitution cipher. It is closely related to the Vigenere cipher but uses a different method of generating the key. In this cipher, the key is a stream of subkeys which is used to encrypt the corresponding character in the plaintext. It incorporates the message (the plaintext) into the key.
 
