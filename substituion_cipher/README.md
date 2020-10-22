@@ -10,3 +10,5 @@ In substitution cipher, one symbol/character replaces with another. For example,
 ## Implementation: 
 1. **Additive or Caesar cipher** : Each character is assigned a unique integer value to the selected key value and perform modulo operation (Z26). Each character is assigned a unique integer value to the selected key value and perform modulo operation (Z26). It is also termed as 'Caesar cipher' or 'Shift cipher'.
 
+2. **Multiplicative Cipher** : In multiplicative cipher, encryption algorithm specifies multiplication of the plaintext by the key. The key needs to be in Z26*. This set has only 12 members: 1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25.
+
