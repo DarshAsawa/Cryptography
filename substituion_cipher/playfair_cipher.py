@@ -55,23 +55,19 @@ def encrypt(plaintext):
                 plaintext=plaintext[:s+1]+'X'+plaintext[s+1:]
     if len(plaintext)%2!=0:
         plaintext=plaintext[:]+'X'
-    print("CIPHER TEXT:",end=' ')
     while i<len(plaintext):
         loc=list()
         loc=locindex(plaintext[i])
         loc1=list()
         loc1=locindex(plaintext[i+1])
         if loc[1]==loc1[1]:
-            print("{}{}".format(my_matrix[(loc[0]+1)%5][loc[1]],my_matrix[(loc1[0]+1)%5][loc1[1]]),end=' ')
             encrypted_text += my_matrix[(loc[0]+1)%5][loc[1]]
             encrypted_text += my_matrix[(loc1[0]+1)%5][loc1[1]]
         elif loc[0]==loc1[0]:
-            print("{}{}".format(my_matrix[loc[0]][(loc[1]+1)%5],my_matrix[loc1[0]][(loc1[1]+1)%5]),end=' ') 
             encrypted_text += my_matrix[loc[0]][(loc[1]+1)%5]
             encrypted_text += my_matrix[loc1[0]][(loc1[1]+1)%5]
             
         else:
-            print("{}{}".format(my_matrix[loc[0]][loc1[1]],my_matrix[loc1[0]][loc[1]]),end=' ')  
             encrypted_text += my_matrix[loc[0]][loc1[1]]
             encrypted_text += my_matrix[loc1[0]][loc[1]]
         i=i+2        
@@ -97,9 +93,12 @@ def decrypt(ciphertext):
         else:
             plaintext+=my_matrix[loc[0]][loc1[1]]
             plaintext+=my_matrix[loc1[0]][loc[1]]
-        i=i+2        
+        i=i+2
+    return plaintext        
 
 plaintext = input("Enter the plaintext: ")
 encrypted_text = encrypt(plaintext) 
+print("\nCipher text: ",encrypted_text.lower())
+
 decrypted_text = decrypt(encrypted_text)
-print("\nPlain text: ",decrypted_text)
+print("\nPlain text: ",decrypted_text.lower())
