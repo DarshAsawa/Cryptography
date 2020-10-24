@@ -9,15 +9,23 @@ def encrypt(plaintext,key):
     ciphertext = ""
     key_length = len(key)
     for i in range(len(plaintext)):
-        value =(ord(plaintext[i])+ord(key[(i%key_length)]))%26
-        ciphertext+=chr(value+65)
+        if plaintext[i] == " ":
+            ciphertext+=" "
+        else:
+            value =(ord(plaintext[i])+ord(key[(i%key_length)]))%26
+            ciphertext+=chr(value+65)
     return ciphertext
+
 def decrypt(ciphertext,key):
     plaintext = ''
     key_length = len(key)
+    
     for i in range(len(ciphertext)):
-        value =(ord(ciphertext[i]) - ord(key[(i%key_length)])+26)%26
-        plaintext+=chr(value+65)
+        if ciphertext[i] == " ":
+            plaintext+=" "
+        else:
+            value =(ord(ciphertext[i]) - ord(key[(i%key_length)])+26)%26
+            plaintext+=chr(value+65)
     return plaintext
 
 phrase = input("Please enter the phrase: ")
