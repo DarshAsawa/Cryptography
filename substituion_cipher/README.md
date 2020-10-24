@@ -17,3 +17,5 @@ In substitution cipher, one symbol/character replaces with another. For example,
 4. **Autokey Cipher** : Autokey Cipher is a polyalphabetic substitution cipher. It is closely related to the Vigenere cipher but uses a different method of generating the key. In this cipher, the key is a stream of subkeys which is used to encrypt the corresponding character in the plaintext. It incorporates the message (the plaintext) into the key.
 
 5. **Playfair Cipher** : The Playfair cipher was the first practical digraph substitution cipher. The technique encrypts pairs of letters (digraphs), instead of single letters as in the simple substitution cipher. The Playfair is significantly harder to break since the frequency analysis used for simple substitution ciphers does not work with it.
+
+6. **Vigenere Cipher** :  The vigenere cipher is an algorithm of encrypting an alphabetic text that uses a series of interwoven caesar ciphers. It is based on a keyword's letters.
