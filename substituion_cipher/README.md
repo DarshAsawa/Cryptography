@@ -20,4 +20,4 @@ In substitution cipher, one symbol/character replaces with another. For example,
 
 6. **Vigenere Cipher** :  The vigenere cipher is an algorithm of encrypting an alphabetic text that uses a series of interwoven caesar ciphers. It is based on a keyword's letters.
 
-7. **Hill Cipher** : It is based on linear algebra. Each letter is first recorded as a number. A block of n letters of n dimensions and multiplied by n X n matrix modulo 26. to decryt the matrix, each block is multiplied by the inverse of matrix used for encryption.
+7. **Hill Cipher** : It is based on linear algebra. Each letter is first recorded as a number. A block of n letters of n dimensions and multiplied by n X n matrix modulo 26. To decryt the matrix, each block is multiplied by the inverse of matrix used for encryption.
