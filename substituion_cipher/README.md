@@ -19,3 +19,5 @@ In substitution cipher, one symbol/character replaces with another. For example,
 5. **Playfair Cipher** : The Playfair cipher was the first practical digraph substitution cipher. The technique encrypts pairs of letters (digraphs), instead of single letters as in the simple substitution cipher. The Playfair is significantly harder to break since the frequency analysis used for simple substitution ciphers does not work with it.
 
 6. **Vigenere Cipher** :  The vigenere cipher is an algorithm of encrypting an alphabetic text that uses a series of interwoven caesar ciphers. It is based on a keyword's letters.
+
+7. **Hill Cipher** : It is based on linear algebra. Each letter is first recorded as a number. A block of n letters of n dimensions and multiplied by n X n matrix modulo 26. to decryt the matrix, each block is multiplied by the inverse of matrix used for encryption.
