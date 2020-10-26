@@ -6,4 +6,4 @@ Cipher is an algorithm which is applied to plain text to get ciphertext. It is t
 
 This repository is for learning purpose, sharing implementations for different types of ciphers in Python.
 
-![Crypography Types](https://www.edureka.co/blog/wp-content/uploads/2018/07/encryption-algorithms-what-is-cryptography-edureka.png)
+![Crypography Types](https://www.edureka.co/blog/wp-content/uploads/2018/07/encryption-algorithms-what-is-cryptography-edureka.png "Types of Cryptography")
