@@ -30,6 +30,7 @@ def columnar_cipher_encrypt(message,key):
 
 
 key = input("Enter the key: ") 
-encrypt_text = columnar_cipher_encrypt("helloworld",key)
+message = input("Enter the message: ")
+encrypt_text = columnar_cipher_encrypt(message,key)
 print('Ecnrypted Text: ' + encrypt_text)
         
